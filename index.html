@@ -221,12 +221,12 @@
     $('#searchInput').oninput=e=>{query=e.target.value;renderOrders()};document.querySelectorAll('[data-sort]').forEach(btn=>btn.onclick=()=>{sort=btn.dataset.sort;document.querySelectorAll('[data-sort]').forEach(b=>b.classList.toggle('active',b===btn));renderOrders()});
     $('#menuToggle').onclick=()=>$('#navLinks').classList.toggle('open');document.querySelectorAll('#navLinks a').forEach(a=>a.onclick=()=>$('#navLinks').classList.remove('open'));
     renderFilters();renderOrders();
-    fetch('/api/orders').then(r=>r.ok?r.json():Promise.reject()).then(data=>{if(Array.isArray(data)&&data.length){orders=data.map(o=>({...o,category:normalizeCategory(o.category)}));renderFilters();renderOrders()}}).catch(()=>{});
+    fetch('https://yangzhuchang-delta-club.ablazesloth6.chatgpt.site/api/orders').then(r=>r.ok?r.json():Promise.reject()).then(data=>{if(Array.isArray(data)&&data.length){orders=data.map(o=>({...o,category:normalizeCategory(o.category)}));renderFilters();renderOrders()}}).catch(()=>{});
     let contactImage='';
     function applySiteSettings(settings={}){applyHeroSettings(settings);contactImage=settings.contactImage||''}
     function openContact(){if(contactImage)renderDetailImage(contactImage,'联系客服图片','#contactBody');else $('#contactBody').innerHTML='<div class="contact-empty">请在后台上传客服联系图片<br>KOOK：1014</div>';$('#contactBackdrop').classList.add('show')}
     function applyHeroSettings(settings={}){[['.photo-card.one','heroImageOne','heroImageOne'],['.photo-card.two','heroImageTwo','heroImageTwo']].forEach(([cardSel,imgId,key])=>{const card=document.querySelector(cardSel);const img=$('#'+imgId);const src=settings[key];if(src){img.src=src;img.style.display='block';card.classList.add('has-image')}else{img.removeAttribute('src');img.style.display='none';card.classList.remove('has-image')}})}
-    fetch('/api/settings').then(r=>r.ok?r.json():Promise.reject()).then(applySiteSettings).catch(()=>{try{applySiteSettings(JSON.parse(localStorage.getItem('yzc_settings_v1')||'{}'))}catch{}});document.querySelectorAll('.contact-trigger').forEach(btn=>btn.onclick=openContact);$('#contactClose').onclick=()=>$('#contactBackdrop').classList.remove('show');$('#contactBackdrop').onclick=e=>{if(e.target.id==='contactBackdrop')$('#contactBackdrop').classList.remove('show')};
+    fetch('https://yangzhuchang-delta-club.ablazesloth6.chatgpt.site/api/settings').then(r=>r.ok?r.json():Promise.reject()).then(applySiteSettings).catch(()=>{try{applySiteSettings(JSON.parse(localStorage.getItem('yzc_settings_v1')||'{}'))}catch{}});document.querySelectorAll('.contact-trigger').forEach(btn=>btn.onclick=openContact);$('#contactClose').onclick=()=>$('#contactBackdrop').classList.remove('show');$('#contactBackdrop').onclick=e=>{if(e.target.id==='contactBackdrop')$('#contactBackdrop').classList.remove('show')};
   </script>
 </body>
 </html>
