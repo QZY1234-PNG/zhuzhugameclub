@@ -1,0 +1,8 @@
+name = "yangzhuchang-delta-club"
+main = "dist/server/index.js"
+compatibility_date = "2026-11-16"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yangzhuchang-db"
+database_id = "替换成你的D1数据库ID"
