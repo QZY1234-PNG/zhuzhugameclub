@@ -191,7 +191,8 @@
   <div class="modal-backdrop" id="detailBackdrop"><div class="modal detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div class="modal-head"><div><div class="section-kicker" id="detailMeta">玩法详情</div><h3 id="detailTitle">单子名称</h3></div><button class="modal-close" id="detailClose" aria-label="关闭">×</button></div><p class="modal-sub" id="detailSummary"></p><div class="modal-body" id="detailBody"></div><div class="modal-footer"><button class="primary-btn contact-trigger" type="button">联系客服 ↗</button></div></div></div>
   <script>
 (async()=>{
-const API_BASE="https://yangzhuchang-delta-club.ablazesloth6.chatgpt.site";\nconst published=await fetch(`${API_BASE}/api/orders`,{cache:"no-store"}).then(async r=>{if(!r.ok)throw Error();const orders=await r.json();const settings=await fetch(`${API_BASE}/api/settings`,{cache:"no-store"}).then(x=>x.ok?x.json():{}).catch(()=>({}));return {schemaVersion:1,orders,settings}}).catch(()=>{throw Error("云端数据库内容加载失败")});
+const API_BASE="https://yangzhuchang-delta-club.ablazesloth6.chatgpt.site";
+const published=await fetch(`${API_BASE}/api/orders`,{cache:"no-store"}).then(async r=>{if(!r.ok)throw Error();const orders=await r.json();const settings=await fetch(`${API_BASE}/api/settings`,{cache:"no-store"}).then(x=>x.ok?x.json():{}).catch(()=>({}));return {schemaVersion:1,orders,settings}}).catch(()=>{throw Error("云端数据库内容加载失败")});
     const seedOrders = [
       {id:'白菜收藏家',category:'趣味单合集',tag:'互动小游戏',title:'白菜收藏家',summary:'选好白菜，避开坏白菜，体验趣味闯关。',price:788,priceLabel:'¥788 起',cover:'green',emoji:'🥬',featured:true,details:['适合喜欢轻松整活的老板','规则简单，开局前由客服说明','具体奖励与结算以当日单子规则为准']},
       {id:'干员猎杀计划',category:'体验保底单',tag:'目标挑战',title:'干员猎杀计划',summary:'接取通缉干员任务，完成目标开启挑战。',price:388,priceLabel:'¥388 起',cover:'purple',emoji:'🎯',featured:true,details:['两位打手分别接取通缉干员任务','每局每位打手限接 1 名干员','击杀目标并成功撤离才算完成']},
