@@ -10,14 +10,14 @@
       "priceLabel": "查看价格",
       "cover": "green",
       "emoji": "🐷",
-      "featured": true,
+      "featured": false,
       "active": true,
       "summary": "文武双全",
+      "image": "assets/uploads/6d3108da80913664dc8b30ee0fe79625c751a546906222c44bf38799d30e1403.jpg",
       "coverImage": "assets/uploads/02f23938c51d4a40cc28a419e5ef09bed967cf522e6b9d668b58e860c02364b3.jpg",
       "details": [
         "文武双全"
-      ],
-      "image": ""
+      ]
     }
   ],
   "settings": {
