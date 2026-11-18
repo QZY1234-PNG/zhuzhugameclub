@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "SBTI人格大检测",
+      "title": "SBTI人格大检测",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "188起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "下单该人格完成任务即可结单",
+      "image": "assets/uploads/4515e4aae5f1f7edbe9f20b1098d9e10c4cd36b29e800881e4c088ddf01af865.jpg",
+      "coverImage": "assets/uploads/279544098d7931f7f38c50283f1b1410519d0463f732eafb57aae72fa1664233.jpg",
+      "details": []
+    },
+    {
       "id": "galgame恋爱攻略",
       "title": "galgame恋爱攻略",
       "category": "趣味单合集",
