@@ -2,8 +2,24 @@
   "schemaVersion": 1,
   "orders": [
     {
-      "id": "1",
-      "title": "1",
+      "id": "cp拆散计划",
+      "title": "cp拆散计划",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "288起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "对局内击杀同队指定 CP 完成拆散任务，撤离成功才算有效！",
+      "image": "assets/uploads/21cdeb55773caa6291afdc01a4d4ec61ec6cf4cd539ddd9942423a7ab0426715.jpg",
+      "coverImage": "assets/uploads/5d7b8a5bb63b43d3d433c10f7293e9cc8bacb2898cc7e9a821e65a11e1b4f65e.jpg",
+      "details": []
+    },
+    {
+      "id": "cp",
+      "title": "cp",
       "category": "趣味单合集",
       "tag": "趣味玩法",
       "price": 0,
@@ -13,8 +29,8 @@
       "featured": false,
       "active": true,
       "summary": "",
-      "image": "assets/uploads/03a75f5ce1cccda887a6d8a8a55228f5336490020d8c003ce7433ba4797e9cac.jpg",
-      "coverImage": "assets/uploads/74112d699a58523022992fe861b8b008ee81897033452cc43404546cbd36f5c4.jpg",
+      "image": "",
+      "coverImage": "",
       "details": []
     },
     {
