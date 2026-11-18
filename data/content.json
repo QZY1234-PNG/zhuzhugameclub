@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "BAN位挑战",
+      "title": "BAN位挑战",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "488起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "养猪场电竞 BAN 枪挑战原创单分体验版 488 元（基础 15 杀保底 2888W，击杀上限 20）、正式版 1088 元（基础 30 杀保底 4888W，击杀上限 45）",
+      "image": "assets/uploads/2b5cdc8eb53e5ba0b977c4e9c706b1017261838b87c5ef6eac4aca92163cd8a6.jpg",
+      "coverImage": "assets/uploads/7dd7c1f9632ec4a661552b04f295fcadeeb84ee96dbe4566a78e9235763bc559.jpg",
+      "details": []
+    },
+    {
       "id": "AW趣味单",
       "title": "AW趣味单",
       "category": "趣味单合集",
