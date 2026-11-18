@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "galgame恋爱攻略",
+      "title": "galgame恋爱攻略",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "188起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "根据下单的档位初始好感度开局，投喂或者撤离成功，增加到好感度100%结单",
+      "image": "assets/uploads/9b3bc828698cb02d71bba1ed58295fbccfaccba188be29086fc1872b4194b4ee.jpg",
+      "coverImage": "assets/uploads/7e93d0f49e23040c332c11af309e536ed6c69bb5628500a42431fc6e0478fdcb.jpg",
+      "details": []
+    },
+    {
       "id": "cp拆散计划",
       "title": "cp拆散计划",
       "category": "趣味单合集",
@@ -15,22 +31,6 @@
       "summary": "对局内击杀同队指定 CP 完成拆散任务，撤离成功才算有效！",
       "image": "assets/uploads/21cdeb55773caa6291afdc01a4d4ec61ec6cf4cd539ddd9942423a7ab0426715.jpg",
       "coverImage": "assets/uploads/5d7b8a5bb63b43d3d433c10f7293e9cc8bacb2898cc7e9a821e65a11e1b4f65e.jpg",
-      "details": []
-    },
-    {
-      "id": "cp",
-      "title": "cp",
-      "category": "趣味单合集",
-      "tag": "趣味玩法",
-      "price": 0,
-      "priceLabel": "查看价格",
-      "cover": "green",
-      "emoji": "🐷",
-      "featured": false,
-      "active": true,
-      "summary": "",
-      "image": "",
-      "coverImage": "",
       "details": []
     },
     {
