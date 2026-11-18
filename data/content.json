@@ -2,6 +2,38 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "沙色保险单",
+      "title": "沙色保险单",
+      "category": "巴克趣味单",
+      "tag": "趣味玩法",
+      "price": 188,
+      "priceLabel": "188起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "沙色保险单",
+      "image": "assets/uploads/bd427ac97472e9eeee6b6a9f8d7c2c7da940fbf0027baa71b1d7ee619a591e97.jpg",
+      "coverImage": "assets/uploads/f221ba0d781a09b3e86d7f0ac91f5c267ff3e87e23aa612105bccf1816926b3e.jpg",
+      "details": []
+    },
+    {
+      "id": "巴克什盲盒单",
+      "title": "巴克什盲盒单",
+      "category": "巴克趣味单",
+      "tag": "趣味玩法",
+      "price": 238,
+      "priceLabel": "238起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "巴克什盲盒单",
+      "image": "assets/uploads/143245bb6b62567cc554e16625119b874f7119fb9bb8ab01569b43a762355039.jpg",
+      "coverImage": "assets/uploads/251d845f45a47dadec0597914f8e86a600bc75aa13fbc69ad06fb019acb66a15.jpg",
+      "details": []
+    },
+    {
       "id": "工牌收集行动",
       "title": "工牌收集行动",
       "category": "巴克趣味单",
