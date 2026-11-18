@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "AW趣味单",
+      "title": "AW趣味单",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "488起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "不出一直打，仅统计成功撤离对局，本单无癞子！！",
+      "image": "assets/uploads/fda8f2a90cae4f735a7881956cc69500e502cc9922426f01ce0b7d60e86823f9.jpg",
+      "coverImage": "assets/uploads/61de7cfbfa41426f9e474dd278272f6c5abb0e3bc54a67df385fb67e91571d24.jpg",
+      "details": []
+    },
+    {
       "id": "1999通关大挑战",
       "title": "1999通关大挑战",
       "category": "趣味单合集",
