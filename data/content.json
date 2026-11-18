@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "1",
+      "title": "1",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "查看价格",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "",
+      "image": "",
+      "coverImage": "assets/uploads/a00b690d0da78e88050e919c54b61326cee3a7ac9d282a5481b8ba7875513dba.jpg",
+      "details": []
+    },
+    {
       "id": "4399小游戏",
       "title": "4399小游戏",
       "category": "趣味单合集",
@@ -64,24 +80,6 @@
       "image": "assets/uploads/f84844b7c955832e0058a74cf23fadb7f2226ccda10b3a34bb1567c9abc15f54.jpg",
       "coverImage": "assets/uploads/f6d62dad03d767734fb268e467526b98af549e4e8a25ea3d127f823e0bf9b1b5.jpg",
       "details": []
-    },
-    {
-      "id": "文武双全",
-      "title": "文武双全",
-      "category": "趣味单合集",
-      "tag": "文武双全",
-      "price": 488,
-      "priceLabel": "查看价格",
-      "cover": "green",
-      "emoji": "🐷",
-      "featured": false,
-      "active": true,
-      "summary": "文武双全",
-      "image": "assets/uploads/6d3108da80913664dc8b30ee0fe79625c751a546906222c44bf38799d30e1403.jpg",
-      "coverImage": "assets/uploads/02f23938c51d4a40cc28a419e5ef09bed967cf522e6b9d668b58e860c02364b3.jpg",
-      "details": [
-        "文武双全"
-      ]
     }
   ],
   "settings": {
