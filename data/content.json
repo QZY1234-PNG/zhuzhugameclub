@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "1999通关大挑战",
+      "title": "1999通关大挑战",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "1999",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "通关大挑战 1999R，依次完成核电站、机密大坝、绝密巴克什、绝密航天、绝密监狱对应任务。",
+      "image": "assets/uploads/a43bb3ae89c42e673bcda8c4bbe0d7294e4ee4a704e7a2ed4d4c8d8176f6efbf.jpg",
+      "coverImage": "assets/uploads/1f908706446785c87789c61c664eea161297f283c14f414182a8af1d2b466418.jpg",
+      "details": []
+    },
+    {
       "id": "1",
       "title": "1",
       "category": "趣味单合集",
