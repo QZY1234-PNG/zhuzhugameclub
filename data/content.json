@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "爱心大放送",
+      "title": "爱心大放送",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "588起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "根据单子的任务要求达到52个爱心",
+      "image": "assets/uploads/ff5437c2efb1f6567b7421dfbf66dc1d11e9f2f4363612e0e21bb72ea995680f.jpg",
+      "coverImage": "assets/uploads/109e7aa7ea4bf30e6fcea85b19e0aa7da3146f4ecdf3485d2c29b5e09b9c6d9b.jpg",
+      "details": []
+    },
+    {
       "id": "SBTI人格大检测",
       "title": "SBTI人格大检测",
       "category": "趣味单合集",
@@ -12,7 +28,7 @@
       "emoji": "🐷",
       "featured": false,
       "active": true,
-      "summary": "下单该人格完成任务即可结单",
+      "summary": "下单该对应人格任务完成才可结单~",
       "image": "assets/uploads/4515e4aae5f1f7edbe9f20b1098d9e10c4cd36b29e800881e4c088ddf01af865.jpg",
       "coverImage": "assets/uploads/279544098d7931f7f38c50283f1b1410519d0463f732eafb57aae72fa1664233.jpg",
       "details": []
