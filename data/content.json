@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "百万人柱力",
+      "title": "百万人柱力",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "528起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "分三档套餐，需要上交指定数量百万以上枪械，成功带出才算进度~",
+      "image": "assets/uploads/1e01266df312f7d9a87580e0395052cc18d9f8ea47ed5ba1d50cbbf185c1d7dd.jpg",
+      "coverImage": "assets/uploads/b60c25a4a41f9911b28c28cd4156614655d0609559240c4b93b828ef86997ddc.jpg",
+      "details": []
+    },
+    {
       "id": "巴克什盲盒单",
       "title": "巴克什盲盒单",
       "category": "巴克趣味单",
