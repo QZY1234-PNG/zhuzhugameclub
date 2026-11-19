@@ -2,6 +2,38 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "趣味单合集",
+      "title": "趣味单合集",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "288起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "趣味单合集：文字狱、保护鼠鼠、猫狗双全、女巫的解药、自力更生单",
+      "image": "assets/uploads/812b47924ffecfea62e48af237beeade3b018b9c6365f38022a7ebb33ffbdfe8.jpg",
+      "coverImage": "assets/uploads/1ae1d58f8b2911f5074e29fb5a361bc5033e522980323381eae754b005c9ab41.jpg",
+      "details": []
+    },
+    {
+      "id": "板板逃亡单",
+      "title": "板板逃亡单",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "228",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "第一局老板躲藏存活每分钟加 50W 保底、打手负责抓老板，第二局正常保底，炸单追加 80W 保底，物资全部上交老板~",
+      "image": "assets/uploads/d6630433c911962b07bd38dd84e424a19097e05e432a66891a5bad9063133669.jpg",
+      "coverImage": "assets/uploads/38c5888374602aa434beb5cdfd08504d97665833fdae15eb91ca1405ff3daeff.jpg",
+      "details": []
+    },
+    {
       "id": "板板的超市",
       "title": "板板的超市",
       "category": "趣味单合集",
