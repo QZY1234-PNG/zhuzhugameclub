@@ -1171,8 +1171,8 @@
     }
   ],
   "settings": {
-    "heroImageOne": "",
-    "heroImageTwo": "",
+    "heroImageOne": "assets/uploads/55c8ab2a1de46a5645ce82b65f682032e8899bcdde845e8eb096f28cea84bda4.jpg",
+    "heroImageTwo": "assets/uploads/76849933e27fc38716956c1b506ce7ea95f9028cdff2230c2fa316b69d6c1a3d.jpg",
     "contactImage": "assets/uploads/d9b504ed29b9a761c2ef2bb4bdd1d0f2a4d0dfdaa4ce4c104bb6fa966116aae5.jpg"
   }
 }
