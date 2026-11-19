@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "巴克什盲盒单",
+      "title": "巴克什盲盒单",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "238起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "按价位对应不同数量盲盒与保底，只打巴克什，按出生点完成点位任务，撤离超 588W 才算有效对局",
+      "image": "assets/uploads/7117ccdda3c0371319028b1a8bdbf4c4f41718fb6dae2b9ec921948c1f580c1a.jpg",
+      "coverImage": "assets/uploads/da8e4d1bc3a4285b6a575d4e0fd64e40a61dddeb32457b2db63cc020349c2f35.jpg",
+      "details": []
+    },
+    {
       "id": "爱心大放送",
       "title": "爱心大放送",
       "category": "趣味单合集",
