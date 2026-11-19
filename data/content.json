@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "礼物单",
+      "title": "礼物单",
+      "category": "礼物单",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "查看价格",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "游戏体验感拉满，您可以自愿送出小礼物犒劳~礼物单如下",
+      "image": "assets/uploads/954f5d0a8b5c7274d66824c9420364630df1f13e0429411548ea3e94e0ae2e63.jpg",
+      "coverImage": "assets/uploads/76da8727d59d7e07a610c092a534dca584ead9ff9297bcfbf7d0fbd0a96b07bf.jpg",
+      "details": []
+    },
+    {
       "id": "趣味单合集",
       "title": "趣味单合集",
       "category": "趣味单合集",
