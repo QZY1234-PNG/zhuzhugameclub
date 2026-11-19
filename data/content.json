@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "板板的超市",
+      "title": "板板的超市",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "288起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "分体验、基础、进阶三档，老板提前选定红色物品，打手用小金清空商铺才算结单，满足条件可补货，有兑换规则、补货限制。",
+      "image": "assets/uploads/61d18dee84de58ad91da723189d7956202ea6995d9bb942194cb4c2ebb4a78e7.jpg",
+      "coverImage": "assets/uploads/0b7541b00d5069a6d39b1cf9c3cb4802f5fd0280b59d16f9decf737780e28ada.jpg",
+      "details": []
+    },
+    {
       "id": "百万人柱力",
       "title": "百万人柱力",
       "category": "趣味单合集",
