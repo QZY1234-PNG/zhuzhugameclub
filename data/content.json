@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "不烧心抢救",
+      "title": "不烧心抢救",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "588起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "打手为医者，板板为烧心患者患者当前烧心值为52%，烧心值归0则抢救成功此玩法仅计算撤离成功的对局~",
+      "image": "assets/uploads/fca2a1c586d4129a11ecb14c03e6e489c8ad06a359104b039dcb3f2bbcacf402.jpg",
+      "coverImage": "assets/uploads/4f65a6e8e86fe1626bdd20cb0805cd5796881eaf45b4fa3ee3346dd21b2a12e8.jpg",
+      "details": []
+    },
+    {
       "id": "vip充值预存",
       "title": "vip充值预存",
       "category": "VIP预存",
