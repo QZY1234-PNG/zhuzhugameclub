@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "vip充值预存",
+      "title": "vip充值预存",
+      "category": "VIP预存",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "查看价格",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "养猪场电竞会员充值预存表~",
+      "image": "assets/uploads/7f2e3e0c33f21c262ef0ed355de88cb8df07330179f51ee26f60dcbbfc235390.jpg",
+      "coverImage": "assets/uploads/c9932d1ae53eba85458c274c3e2befbbb0260c293f073736113b8542e958136e.jpg",
+      "details": []
+    },
+    {
       "id": "礼物单",
       "title": "礼物单",
       "category": "礼物单",
