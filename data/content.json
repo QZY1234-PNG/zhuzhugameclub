@@ -2,6 +2,38 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "航天超级清图单",
+      "title": "航天超级清图单",
+      "category": "航天趣味单",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "300起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "根据选择的档位要求完成清图任务~",
+      "image": "assets/uploads/154a5d77f135d7ad1b5adfdcc8c0b7f83102489378f5293cbf83233ca9a4980d.jpg",
+      "coverImage": "assets/uploads/c93e2001e8d76cd4ace032d4fd8c64a279c72ed01b7f3d6aa9ece8b46422deb0.jpg",
+      "details": []
+    },
+    {
+      "id": "步步高升",
+      "title": "步步高升",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "428起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "分三档，要求每局撤离物资逐步递增~",
+      "image": "assets/uploads/6f23f266ac34584e8f4f30a77e4e68ada0745267ddd344949eb207b764f88b81.jpg",
+      "coverImage": "assets/uploads/b5b292f95fcdaa05089119bc74d3fb8c4d22b9464f40faaea8b4fa1c3b56fa63.jpg",
+      "details": []
+    },
+    {
       "id": "井字棋趣味单",
       "title": "井字棋趣味单",
       "category": "趣味单合集",
