@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "监狱盲盒单",
+      "title": "监狱盲盒单",
+      "category": "监狱趣味单",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "258起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "本单只打监狱只计算撒离成功大于588W以上的对局，根据出生点完成任务~",
+      "image": "assets/uploads/bfb9c900cfbd8c7a36b27e2903887374610c781a3be6fb3f7cc39647be7cfa56.jpg",
+      "coverImage": "assets/uploads/b8e823fdbc74a7f13fb66745dd02b7340e65d14831661400d346485306236467.jpg",
+      "details": []
+    },
+    {
       "id": "嘉豪趣味单",
       "title": "嘉豪趣味单",
       "category": "趣味单合集",
