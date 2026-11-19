@@ -2,6 +2,38 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "高光时刻",
+      "title": "高光时刻",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "588",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "根据完成任务完成增减的分数，高光时刻达到555分即可结单",
+      "image": "assets/uploads/3dea8809a847ba1aa397d2519e4cb0ef3ee26b6f926546396c02588427026759.jpg",
+      "coverImage": "assets/uploads/3ae2abadb166962e2d048199aa1f792751754ba5968c3e6f90c4bd3a1e170d1a.jpg",
+      "details": []
+    },
+    {
+      "id": "干员猎杀计划",
+      "title": "干员猎杀计划",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "688起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "小队需要将对应通缉令的干员击杀，才视为通缉成功~",
+      "image": "assets/uploads/41ceeba7064c8d9c143431ca7a25256b62e376a7e38f8fcc3e0d54b5fa90c02d.jpg",
+      "coverImage": "assets/uploads/363d393c97c93e0d164c362753d19def0fc40f7fafe637a249b7bb13375d1b5f.jpg",
+      "details": []
+    },
+    {
       "id": "干员bingo",
       "title": "干员bingo",
       "category": "趣味单合集",
