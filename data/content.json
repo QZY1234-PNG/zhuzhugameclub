@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "井字棋趣味单",
+      "title": "井字棋趣味单",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "588",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "保底必须下完一盘棋，棋盘内触发横 / 竖 / 斜三连即为胜利",
+      "image": "assets/uploads/66980471a0e976564cd37cd01f67028f9129b3edfac34afffe50740c014dcc4f.jpg",
+      "coverImage": "assets/uploads/78d1d95f47d363fdd1b4700aa5e6361c87a16a3adb267f1b05708d6479c00b4b.jpg",
+      "details": []
+    },
+    {
       "id": "不烧心抢救",
       "title": "不烧心抢救",
       "category": "趣味单合集",
