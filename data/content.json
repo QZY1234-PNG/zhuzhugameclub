@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "纳尼单",
+      "title": "纳尼单",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "388起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "纳尼保镖，笨蛋上岗",
+      "image": "assets/uploads/89d89c444cc25a30c9497a68034fa34aba62b899345507eba58c3b7154d0ad10.jpg",
+      "coverImage": "assets/uploads/f00184b10f42785c1510cc0ecde798f86ee1eef73359e4b1f6cf817101bec4ca.jpg",
+      "details": []
+    },
+    {
       "id": "秋季拾叶集图鉴",
       "title": "秋季拾叶集图鉴",
       "category": "趣味单合集",
@@ -127,22 +143,6 @@
       "summary": "任务要求:成功撤离累计带出9个指定小金",
       "image": "assets/uploads/82db1ebeb6f33d11bab7f0013bdc2eff9f3529cc673a23e98410b48ec3a5d0ce.jpg",
       "coverImage": "assets/uploads/6e9ec781ee02aaeb0f64e8ed0a24462b326f43f23ae86b17c15611f33b295907.jpg",
-      "details": []
-    },
-    {
-      "id": "井字棋",
-      "title": "井字棋",
-      "category": "趣味单合集",
-      "tag": "趣味玩法",
-      "price": 588,
-      "priceLabel": "588",
-      "cover": "green",
-      "emoji": "🐷",
-      "featured": false,
-      "active": true,
-      "summary": "保底必须下完一盘棋，棋盘内触发横/竖/斜三连即为胜利",
-      "image": "assets/uploads/044d93de6d44254c0704675c6c4999c26bdd56d07f28d7dee00deb4cdf1ae085.jpg",
-      "coverImage": "assets/uploads/fed98159ce24543fdde48aff46972e32d3a20c3e57bc2f441a588911c127856c.jpg",
       "details": []
     },
     {
@@ -429,8 +429,8 @@
       "featured": false,
       "active": true,
       "summary": "游戏开始前，板板选定任意一个交易行在售的红或金色品质的收集品，直到打手猜中板板选择的收集品方可结单~",
-      "image": "assets/uploads/8fda98142fa9c08d6d7a60e2df37f3cce4a04311b0e0999b3435aff1a3022732.jpg",
-      "coverImage": "assets/uploads/8f2e99b1d927efd4e077f2e258b23c8678b6d03ed3806e8bdab8013f6b3be49d.jpg",
+      "image": "assets/uploads/72616052aae7b505c034fbaa825356f84978c7a1aee6c19209a514b9eb578e69.jpg",
+      "coverImage": "assets/uploads/206d9872f72f35194b0f54db6d10e9250f593c9c2317cc10ea192bdd58b1283a.jpg",
       "details": []
     },
     {
