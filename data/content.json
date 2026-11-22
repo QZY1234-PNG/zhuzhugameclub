@@ -2,6 +2,38 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "清图版小巨人",
+      "title": "清图版小巨人",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "488起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "分 488、788、1288 三档，各档位初始血量不同，按清图快慢扣血、撤离失败会扣血~",
+      "image": "assets/uploads/2c302a86384ae197c46adf36323cb8c89318ced162acbf0a3f2ae82a9a010f6e.jpg",
+      "coverImage": "assets/uploads/13b977d73a8a230fe0b34c9f7bfacecf31bec35e97a3166213537c69f3a95e29.jpg",
+      "details": []
+    },
+    {
+      "id": "撬开德穆兰保险柜",
+      "title": "撬开德穆兰保险柜",
+      "category": "航天趣味单",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "358起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "据档位要求做对应次数的保险柜任务，同时增加了彩蛋二选一“出红不计或撤离失败五局增加一次任务”难度极高，保险柜任务仅计算700w以上撤离成功对局！！",
+      "image": "assets/uploads/1138debe2929c539ee6effff0f2f96f8f9d38b60d8f9fc559eecfe5fc6f34e58.jpg",
+      "coverImage": "assets/uploads/e964210fe3130844ed7f20ac2d65b9d4f35d408edc70faff2fe0e4a6f0d85e56.jpg",
+      "details": []
+    },
+    {
       "id": "抢小猪大作战",
       "title": "抢小猪大作战",
       "category": "趣味单合集",
@@ -68,7 +100,7 @@
     {
       "id": "七宗罪",
       "title": "七宗罪",
-      "category": "趣味单合集",
+      "category": "航天趣味单",
       "tag": "趣味玩法",
       "price": 0,
       "priceLabel": "888起",
