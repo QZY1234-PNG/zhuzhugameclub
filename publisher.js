@@ -73,11 +73,12 @@ async function publishContent({token, orders, settings, baseline, status}) {
   const commit = await api(`git/commits/${head.object.sha}`);
   const current = await api(`contents/data/content.json?ref=${head.object.sha}`);
   const currentContent = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(current.content.replace(/\s/g,'')), c=>c.charCodeAt(0))));
-  const snapshot = JSON.parse(JSON.stringify(mergePublishedContent(baseline,{schemaVersion:1,orders,settings},currentContent)));
-  if (!equalContentValue(normalizePublishedContent(currentContent),normalizePublishedContent(baseline))) status('正在合并最新官网内容与本机草稿…');
-  const entries = [], seen = new Map();
-  async function imageFile(value) {
+  // Compare an image's bytes with its published filename before merging.
+  // A restored draft may still contain the data URL for an already published image.
+  const pendingImages = new Map(), imageReferences = new Map();
+  async function imageReference(value) {
     if (!value || !value.startsWith('data:')) return value;
+    if (imageReferences.has(value)) return imageReferences.get(value);
     const match = /^data:(image\/(?:png|jpeg|webp|gif|svg\+xml));base64,([\s\S]+)$/.exec(value);
     if (!match) throw Error('图片格式不支持，请使用 PNG、JPG、WebP、GIF 或 SVG');
     const bytes = Uint8Array.from(atob(match[2]), c=>c.charCodeAt(0));
@@ -85,9 +86,28 @@ async function publishContent({token, orders, settings, baseline, status}) {
     const hash = [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('');
     const ext = {'image/png':'png','image/jpeg':'jpg','image/webp':'webp','image/gif':'gif','image/svg+xml':'svg'}[match[1]];
     const path = `assets/uploads/${hash}.${ext}`;
-    if (!seen.has(path)) {
+    pendingImages.set(path,match[2]);imageReferences.set(value,path);
+    return path;
+  }
+  async function contentWithImageReferences(value) {
+    const result=JSON.parse(JSON.stringify(normalizePublishedContent(value)));
+    for (const order of result.orders) for (const key of ['image','coverImage']) order[key]=await imageReference(order[key]);
+    for (const key of ['heroImageOne','heroImageTwo','contactImage']) result.settings[key]=await imageReference(result.settings[key]);
+    return result;
+  }
+  const baseContent=await contentWithImageReferences(baseline);
+  const draftContent=await contentWithImageReferences({schemaVersion:1,orders,settings});
+  const latestContent=await contentWithImageReferences(currentContent);
+  const snapshot=mergePublishedContent(baseContent,draftContent,latestContent);
+  if (!equalContentValue(latestContent,baseContent)) status('正在合并最新官网内容与本机草稿…');
+  const existingImages=new Set();
+  for (const order of currentContent.orders) for (const key of ['image','coverImage']) existingImages.add(order[key]);
+  for (const key of ['heroImageOne','heroImageTwo','contactImage']) existingImages.add(currentContent.settings?.[key]);
+  const entries = [], seen = new Map();
+  async function imageFile(path) {
+    if (pendingImages.has(path) && !existingImages.has(path) && !seen.has(path)) {
       status(`正在上传图片 ${seen.size+1}…`);
-      const blob = await api('git/blobs','POST',{content:match[2],encoding:'base64'});
+      const blob = await api('git/blobs','POST',{content:pendingImages.get(path),encoding:'base64'});
       entries.push({path, mode:'100644', type:'blob', sha:blob.sha});seen.set(path,true);
     }
     return path;
@@ -102,4 +122,5 @@ async function publishContent({token, orders, settings, baseline, status}) {
   await api('git/refs/heads/main','PATCH',{sha:next.sha,force:false});
   return snapshot;
 }
+
 

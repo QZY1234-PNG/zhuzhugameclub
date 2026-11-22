@@ -2,7 +2,7 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
-const {webcrypto}=require('node:crypto');
+const {webcrypto,createHash}=require('node:crypto');
 const source=fs.readFileSync(__dirname+'/../publisher.js','utf8');
 function harness(fetch){const ctx=vm.createContext({fetch,crypto:webcrypto,TextDecoder,Uint8Array,atob,AbortSignal});vm.runInContext(source,ctx);return ctx;}
 const ctx=harness();const merge=ctx.mergePublishedContent;
@@ -87,3 +87,30 @@ test('真正冲突时零写入；发布中有人更新时不会强制覆盖',asy
  await assert.rejects(h.c.publishContent({token:'fixture',orders:[order('单',{price:200})],settings:{},baseline:base,status:()=>{}}),e=>e.code==='CONTENT_CONFLICT');assert.equal(h.writes.length,0);
  const race=apiHarness(base,{race:true});await assert.rejects(race.c.publishContent({token:'fixture',orders:[order('单',{price:200})],settings:{},baseline:base,status:()=>{}}),/422/);assert.equal(race.writes.at(-1).body.force,false);
 });
+
+const inlineImage=text=>'data:image/png;base64,'+Buffer.from(text).toString('base64');
+const imagePath=text=>'assets/uploads/'+createHash('sha256').update(text).digest('hex')+'.png';
+test('恢复121单草稿：同一首页图片的内嵌版本与官网文件可合并',async()=>{
+ const base=content(Array.from({length:119},(_,i)=>order('原单'+i)),{heroImageOne:'assets/uploads/old-one.png',heroImageTwo:'assets/uploads/old-two.png'});
+ const remote=content(base.orders,{heroImageOne:imagePath('main photo'),heroImageTwo:imagePath('second photo')});
+ const local=content([order('小猪拱白菜'),order('板板的爱陪'),...base.orders],{heroImageOne:inlineImage('main photo'),heroImageTwo:inlineImage('second photo')});
+ const before=JSON.stringify(local),{c,writes}=apiHarness(remote);
+ const result=await c.publishContent({token:'fixture',orders:local.orders,settings:local.settings,baseline:base,status:()=>{}});
+ assert.equal(result.orders.length,121);assert.equal(result.settings.heroImageOne,remote.settings.heroImageOne);assert.equal(result.settings.heroImageTwo,remote.settings.heroImageTwo);
+ assert.equal(writes.filter(x=>x.path==='git/blobs').length,0);assert.equal(JSON.stringify(local),before);
+});
+test('草稿图片与旧基准相同，保留官网较新的图片且不上传旧图',async()=>{
+ const base=content([order('单')],{heroImageOne:inlineImage('old photo')});
+ const remote=content([order('单')],{heroImageOne:imagePath('new photo')});
+ const {c,writes}=apiHarness(remote);
+ const result=await c.publishContent({token:'fixture',orders:base.orders,settings:base.settings,baseline:base,status:()=>{}});
+ assert.equal(result.settings.heroImageOne,remote.settings.heroImageOne);assert.equal(writes.filter(x=>x.path==='git/blobs').length,0);
+});
+test('两边确实换成不同首页图片时仍阻止发布且零写入',async()=>{
+ const base=content([order('单')],{heroImageOne:imagePath('original')});
+ const remote=content([order('单')],{heroImageOne:imagePath('remote new')});
+ const {c,writes}=apiHarness(remote);
+ await assert.rejects(c.publishContent({token:'fixture',orders:base.orders,settings:{heroImageOne:inlineImage('local new')},baseline:base,status:()=>{}}),e=>e.code==='CONTENT_CONFLICT'&&e.conflicts[0].field==='heroImageOne');
+ assert.equal(writes.length,0);
+});
+
