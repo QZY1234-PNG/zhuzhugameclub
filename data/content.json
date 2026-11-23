@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "挥剑最强者",
+      "title": "挥剑最强者",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 288,
+      "priceLabel": "288起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "前期保存实力，只能打最后一队(如若还有其他人板板白吃)。\n两个打手击杀数不能超过3人。\n打手允许主枪带一把主武器，副枪AWM或狙击枪。",
+      "image": "assets/uploads/8a167613401c6be7da20987d9eb26605e24cdb7efa729a9ca21357b6226326d4.jpg",
+      "coverImage": "assets/uploads/ed826436c6cf10970ffbea47fcdafae2b758cbd4421c48e38bf1301f46bc20f7.jpg",
+      "details": []
+    },
+    {
       "id": "任务bingo单",
       "title": "任务bingo单",
       "category": "趣味单合集",
