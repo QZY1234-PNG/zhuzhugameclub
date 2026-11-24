@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "拯救老板大作战",
+      "title": "拯救老板大作战",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 0,
+      "priceLabel": "388起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "",
+      "image": "assets/uploads/4026428a895819c8f9c39b2a75035ad0b3bce2d63e46d289afc0c35b4ddcd4d4.jpg",
+      "coverImage": "assets/uploads/a144ddc3b804d9c21552c052f92a6d35d47ea0d804a9907808b9170c9084ff95.jpg",
+      "details": []
+    },
+    {
       "id": "挥剑最强者",
       "title": "挥剑最强者",
       "category": "趣味单合集",
@@ -2022,15 +2038,15 @@
       "title": "小猪拱白菜",
       "category": "趣味单合集",
       "tag": "趣味玩法",
-      "price": 688,
+      "price": 0,
       "priceLabel": "688起",
       "cover": "green",
       "emoji": "🐷",
-      "featured": true,
+      "featured": false,
       "active": true,
-      "summary": "挑白菜·闯关挑战",
-      "image": "assets/uploads/c6857767885147fc15194dbbf58bf85e0153aa9578abfa98100dd9ff47e03b16.jpg",
-      "coverImage": "assets/uploads/71ae9efaf867e5aef27018d150e2f83c2fb5106409d7a05a00e94093dafaab90.jpg",
+      "summary": "挑选错误的小白菜会倒退~",
+      "image": "assets/uploads/1c42f0693ce42a662e851248d43541da71d3762bd157f4fdd911cd4dbe15f0b3.jpg",
+      "coverImage": "assets/uploads/b350d3ed00105a717dfb98788a4e350f8d0fbeb6b315bd9251e8ab286fa9b3b4.jpg",
       "details": []
     }
   ],
