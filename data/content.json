@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "orders": [
     {
+      "id": "小猪出逃日记",
+      "title": "小猪出逃日记",
+      "category": "趣味单合集",
+      "tag": "趣味玩法",
+      "price": 588,
+      "priceLabel": "588起",
+      "cover": "green",
+      "emoji": "🐷",
+      "featured": false,
+      "active": true,
+      "summary": "588R保底2688w 摇三次\n988R保底4088w 摇六次\n1288R保底4888w 逛九次",
+      "image": "assets/uploads/d9fe0cf28639275ff99ccd15e3888abb481fc483367e893010a7232ba06f5791.jpg",
+      "coverImage": "assets/uploads/93d5951260f2a3aa123fa3e2dac01a191628e87448e0ea2f352f05ca1107ae42.jpg",
+      "details": []
+    },
+    {
       "id": "拯救老板大作战",
       "title": "拯救老板大作战",
       "category": "趣味单合集",
